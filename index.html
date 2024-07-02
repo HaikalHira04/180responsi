@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindWell Clinic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><center>MindWell Clinic</center></h1>
+        <p><center>Praktik Dr. Amira</center></p>
+        <p><center>(Menawarkan Berbagai Layanan Konsultasi Kejiwaan)</center></p>
+        <nav>
+            <ul>
+                <li><a href="jadwal_detail.html">Jadwal Konsultasi</a></li>
+                <li><a href="janji_temu.php">Data Janji</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="buat-janji">
+            <p><center>Buat Janji Konsultasi</center></p>
+            <form id="form-janji" method="post" action="proses.php">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+                <label for="nomor">Nomor Telepon:</label>
+                <input type="tel" id="nomor" name="nomor" required>
+                <label for="tanggal">Pilih Tanggal:</label>
+                <input type="date" id="tanggal" name="tanggal" required>
+                <label for="jam">Pilih Jam:</label>
+                <input type="time" id="jam" name="jam" required step="1800">
+                <button type="submit">Buat Janji</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
